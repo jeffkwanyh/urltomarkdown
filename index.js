@@ -16,8 +16,8 @@ if(!port) {
 // handled upstream by proxy
 
 const rateLimiter = rateLimit({
-	windowMs: 30 * 1000,
-	max: 5,
+	windowMs: 60 * 1000,
+	max: 10,
 	message: 'Rate limit exceeded',
 	headers: true
 });
